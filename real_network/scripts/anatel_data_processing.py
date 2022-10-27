@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 13 18:48:25 2022
 
 @author: jpshlima
 """
 
-# load best anatel lstm model, load base for predictions and test classifiers
+# load best anatel lstm model, load base for predictions and prepare data for classification
 
 from keras.models import model_from_json
 def loadTrainedNN():
@@ -64,7 +63,7 @@ import numpy as np
 import pandas as pd
 
 # First, read and prepare RSRP data
-files = ['export_tim_14.csv', 'export_tim_18.csv', 'export_tim_19.csv']
+files = ['drive_test_measurements01.csv', 'drive_test_measurements02.csv', 'drive_test_measurements03.csv']
 df = pd.concat((pd.read_csv(f) for f in files))
 df.drop(df.columns[[0,1,2,4,5,7,8,9,10]], axis=1, inplace=True)
 df['ho_trig'] = 0

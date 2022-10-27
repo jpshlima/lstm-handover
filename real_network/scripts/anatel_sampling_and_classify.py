@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 13 19:15:25 2022
 
 @author: jpshlima
 """
@@ -67,11 +66,11 @@ inputs = scaler.fit_transform(inputs)
 
 
 
-##applies k-Fold, classifies, repeat the process X times and calculate means and std.dev
+##applies k-Fold, classifies, repeat the process X times and calculate means, std.dev and f1 score
 #from sklearn.model_selection import StratifiedKFold
 #from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 #from sklearn.svm import SVC
-## Aplica o StratifiedKFold
+## applies StratifiedKFold
 #resultados33 = []
 #f1score33 = []
 #for i in range(10):
@@ -101,11 +100,11 @@ inputs = scaler.fit_transform(inputs)
 #matriz_final
 
 
-##applies k-Fold, classifies, repeat the process X times and calculate means and std.dev
+##applies k-Fold, classifies, repeat the process X times and calculate means, std.dev and f1 score
 #from sklearn.model_selection import StratifiedKFold
 #from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 #from sklearn.neural_network import MLPClassifier
-## Aplica o StratifiedKFold
+## applies StratifiedKFold
 #resultados33 = []
 #f1score33 = []
 #for i in range(10):
@@ -135,11 +134,11 @@ inputs = scaler.fit_transform(inputs)
 #matriz_final
 
 
-##applies k-Fold, classifies, repeat the process X times and calculate means and std.dev
+##applies k-Fold, classifies, repeat the process X times and calculate means, std.dev and f1 score
 #from sklearn.model_selection import StratifiedKFold
 #from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 #from sklearn.neighbors import KNeighborsClassifier
-## Aplica o StratifiedKFold
+## applies StratifiedKFold
 #resultados33 = []
 #f1score33 = []
 #for i in range(10):
@@ -169,11 +168,11 @@ inputs = scaler.fit_transform(inputs)
 #matriz_final
 
 
-#applies k-Fold, classifies, repeat the process X times and calculate means and std.dev
+#applies k-Fold, classifies, repeat the process X times and calculate means, std.dev and f1 score
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from sklearn.ensemble import RandomForestClassifier
-# Aplica o StratifiedKFold
+# applies stratifiedKFold
 resultados33 = []
 f1score33 = []
 for i in range(10):
@@ -203,35 +202,3 @@ resultados33.std()
 matriz_final
 
 
-##applies k-Fold, classifies, repeat the process X times and calculate means and std.dev
-#from sklearn.model_selection import StratifiedKFold
-#from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
-#from sklearn.linear_model import LogisticRegression
-## Aplica o StratifiedKFold
-#resultados33 = []
-#f1score33 = []
-#for i in range(1):
-#    kfold = StratifiedKFold(n_splits = 5, shuffle = True, random_state = i)
-#    resultados1 = []
-#    matriz1 = []
-#    f1score = []
-#    for n_train, n_test in kfold.split(inputs, np.zeros(shape=(inputs.shape[0], 1))):
-#        model = LogisticRegression(C=200, solver='liblinear', max_iter=1500)
-#        model.fit(inputs[n_train], label[n_train])
-#        previsoes = model.predict(inputs[n_test])
-#        precisao = accuracy_score(label[n_test], previsoes)
-#        matriz1.append(confusion_matrix(label[n_test], previsoes))
-#        resultados1.append(precisao)
-#        f1score1 = f1_score(label[n_test], previsoes)
-#        f1score.append(f1score1)
-#    resultados1 = np.asarray(resultados1)
-#    media = resultados1.mean()
-#    resultados33.append(media)
-#    f1score33.append(f1score)
-#    matriz_final = np.mean(matriz1, axis = 0)
-#resultados33 = np.asarray(resultados33)
-#f1score = np.mean(f1score33)
-#
-#resultados33.mean()
-#resultados33.std()
-#matriz_final
