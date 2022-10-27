@@ -8,7 +8,7 @@ bla
 
 ## Citation
 
-If you use our scripts and dataset, please cite our ICC papers. Here is a suitable BibTeX entry:
+If you use our scripts and dataset, please cite our ICC paper. Here is a suitable BibTeX entry:
 
 ```python
 @inproceedings{joao_2023, 
