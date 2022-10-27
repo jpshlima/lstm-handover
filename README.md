@@ -10,7 +10,7 @@ The 'sampling_and_classify.py' files apply the selected class-balancing techniqu
 
 ## Data features
 
-The data is also found here, allowing reproducibility. The data collection was conducted via a partnership between the Brazilian National Telecommunication Agency (ANATEL) and Federal University of Juiz de Fora (UFJF).
+The data is also found here, allowing reproducibility. The data collection was conducted by the Brazilian National Telecommunication Agency (ANATEL) for a partnership with Federal University of Juiz de Fora (UFJF).
 
 ## Citation
 
