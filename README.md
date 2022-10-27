@@ -7,7 +7,10 @@ Although the 5G New Radio standard empowers the mobile communication networks wi
 Scripts with 'lstm_rsrp.py' are the ones responsible for creating the LSTM model to predict future RSRP samples.
 The 'data_processing' scripts concatenate many different data files, create the final dataframe to serve as models' inputs.
 The 'sampling_and_classify.py' files apply the selected class-balancing techniques (SMOTE and Tomek Links) and also implement the classifiers, with training and cross-validation steps.
-The data is also found here, allowing reproducibility.
+
+## Data features
+
+The data is also found here, allowing reproducibility. The data collection was conducted via a partnership between the Brazilian National Telecommunication Agency (ANATEL) and Federal University of Juiz de Fora (UFJF).
 
 ## Citation
 
