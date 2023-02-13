@@ -37,5 +37,5 @@ pages={TBD}
 - Alysson L. Reis
 
 ## Acknowledgments
-- This study was financed in part by FUNTTEL/Finep and the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Finance Code 001;
+- This study was financed in part by FUNTTEL/Finep - Grant No. 01.20.0179.00, and the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Finance Code 001;
 - The proof of concept simulations provided by this Letter was supported by High Performance Computing Center (NPAD/UFRN).
